@@ -11,6 +11,51 @@
             &-item{
                 margin-right: 10px;
                 @include fontSize(16px);
+
+                @include for-phone-only{
+                    display: none;
+
+                }
             }
+            &-button{
+                @extend %invisible;
+                width: 60px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+
+                @include for-phone-only{
+                    display: inline;
+                }
+
+                .menu{
+                    width: 100%;
+                }
+            }
+
+          //menu mobile
+          
+          &-mobile-opts{
+              width: 100vw;
+
+              @include reset-list();
+              position: absolute;
+              top: 90px;
+              left: 0vw;
+
+            background: linear-gradient($color4, $color4, $color5)
+
+
+          }
+
+          &-mobile-items{
+              color: $color-text;
+              margin: 15px;
+              text-align: center
+
+            //   transition: all 2s linear ;
+          }
     }
+
 }
+

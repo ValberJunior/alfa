@@ -14,12 +14,26 @@
 
     z-index:1;
 
+    @include for-phone-only{
+        background: $color4;
+    }
+
+
         &__wrapper{
 
             width: 75%;
             margin: auto;
             @include displayflex(justify-content, space-between);
             align-items: center;
+
+
+            @include for-phone-only{
+                width: 90%;
+            }
+
+            @include for-tablet-only{
+                width: 85%;
+            }
         }
 
         &__logo{
