@@ -1,10 +1,12 @@
 import React from 'react'
-import { Header } from '../../components'
+import { Carousel, Header, Waves } from '../../components'
 
 const Home = () => {
   return (
     <>
       <Header/>
+      <Carousel/>
+      <Waves/>
     
     </>
   )

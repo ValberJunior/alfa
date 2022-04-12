@@ -38,7 +38,7 @@ const Navbar = () => {
 
 
 
-      <navbar className="navbar">
+      <nav className="navbar">
 
           {NavbarMenu()}
 
@@ -47,7 +47,7 @@ const Navbar = () => {
         {MenuMobile()}
       </div>
 
-      </navbar>
+      </nav>
 
       <button className="navbar__menu-button" onClick={HandleMenu} >
         <img src={Menu} className="menu"/>
