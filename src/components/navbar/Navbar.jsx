@@ -20,29 +20,37 @@ const Navbar = () => {
 
   const MenuMobile = ()=>{
     return(
-      <ul className="navbar__menu-mobile-opts">
+      <ul className={`navbar__menu-mobile-opts ${(show == false)?null: "navbar__menu-mobile-opts-show"}`}>
       <li className="navbar__menu-mobile-items">Home</li>
       <li className="navbar__menu-mobile-items">Sobre</li>
       <li className="navbar__menu-mobile-items">Planos</li>
       <li className="navbar__menu-mobile-items">Contato</li>
       </ul>
     )
+  };
+
+  const HandleMenu = ()=>{
+   setShow(!show);
+   console.log(show);
   }
 
   return (
     <>
 
-      <navbar className="navbar">
 
-      <div className="navbar__menu-mobile">
-        {show?MenuMobile():null}
-      </div>
+
+      <navbar className="navbar">
 
           {NavbarMenu()}
 
+          <div className="navbar__menu-mobile">
+        {/* {show?MenuMobile():null} */}
+        {MenuMobile()}
+      </div>
+
       </navbar>
 
-      <button className="navbar__menu-button" onClick={()=>{setShow(!show)}} >
+      <button className="navbar__menu-button" onClick={HandleMenu} >
         <img src={Menu} className="menu"/>
       </button>
 

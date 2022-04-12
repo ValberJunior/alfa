@@ -4,18 +4,19 @@
 
 
 .header{
-    width: 100%;
+    width: 100vw;
     background: linear-gradient($color4,$color4,$color5);
 
     position: sticky;
     top:0;
 
     padding: 15px 30px;
-
-    z-index:1;
+    
+    z-index: 9999; 
 
     @include for-phone-only{
         background: $color4;
+        z-index: 99999;
     }
 
 
@@ -28,7 +29,8 @@
 
 
             @include for-phone-only{
-                width: 90%;
+                width: 100%;
+                background-color: $color4;
             }
 
             @include for-tablet-only{
