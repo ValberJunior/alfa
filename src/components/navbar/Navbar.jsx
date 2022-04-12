@@ -31,7 +31,6 @@ const Navbar = () => {
 
   const HandleMenu = ()=>{
    setShow(!show);
-   console.log(show);
   }
 
   return (
@@ -44,7 +43,7 @@ const Navbar = () => {
           {NavbarMenu()}
 
           <div className="navbar__menu-mobile">
-        {/* {show?MenuMobile():null} */}
+    
         {MenuMobile()}
       </div>
 

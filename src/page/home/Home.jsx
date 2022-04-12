@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Header/>
-        Aqui ficará o slide
+    
     </>
   )
 }
