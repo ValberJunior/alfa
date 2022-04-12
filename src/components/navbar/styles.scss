@@ -1,0 +1,16 @@
+@import "../../abstract/functions";
+@import "../../abstract/responsive";
+@import "../../abstract/variables";
+
+.navbar{
+
+    &__menu{
+                @include displayflex(justify-content, center);
+                @include reset-list();
+
+            &-item{
+                margin-right: 10px;
+                @include fontSize(16px);
+            }
+    }
+}
