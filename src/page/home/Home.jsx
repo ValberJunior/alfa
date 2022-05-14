@@ -1,5 +1,5 @@
 import React from 'react'
-import { Carousel, Header, Waves } from '../../components'
+import { Carousel, Header, KnowMore, Waves } from '../../components'
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Header/>
       <Carousel/>
       <Waves/>
+      <KnowMore/>
     
     </>
   )

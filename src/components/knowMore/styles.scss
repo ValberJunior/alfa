@@ -1,0 +1,89 @@
+@import "../../abstract/variables","../../abstract/functions","../../abstract/responsive";
+
+
+.knowmore{
+    @include fullscreen(100vw, auto);
+    @include displayflex(justify-content, center);
+    align-items: center;
+
+    &__container{
+        @include wrapperCenter(70%, row);
+
+        //for tablet
+        @include for-tablet-only{
+            @include wrapperCenter(90%, row);
+            padding: 20px 0px;
+        }
+
+        //for phone
+        @include for-phone-only{
+            @include wrapperCenter(90%, column);
+            padding: 20px 0px;
+        }
+
+        .content{
+            &__img{
+                width: 40%;
+
+                //for phone
+                @include for-phone-only{
+                    width: 280px;
+                    margin-bottom: 20px;
+                }
+        
+            }
+            &__desc{
+                width: 60%;
+                @include wrapperCenter(40%, column);
+
+                //for tablet
+                @include for-tablet-only{
+                    @include wrapperCenter(90%, column);
+                    padding: 10px;
+                }
+                //for phone
+                @include for-phone-only{
+                    @include wrapperCenter(90%, column);
+                    padding: 10px;
+                }
+
+                &-title{
+                    @include title(40px, center, $color-text );
+                    margin-bottom: 60px;
+                    
+                    //for tablet
+                    @include for-tablet-only{
+                        @include title(33px, center, $color-text );
+                        margin-bottom: 40px;
+                    }
+                
+                    //for phone
+                    @include for-phone-only{
+                        @include title(32px, center, $color-text );
+                        margin-bottom: 40px;
+                    }
+                }
+
+                &-text{
+                    @include text(18px, start, $color-text);
+                    margin-bottom: 40px;
+
+                    //for tablet
+                    @include for-tablet-only{
+                        @include text(16px, start, $color-text);
+                        margin-bottom: 25px;
+                    }
+                }
+
+                &-link{
+                    align-self: flex-end;
+
+                    //for phone
+                    @include for-phone-only{
+                       align-self: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,4 @@
+@import "./variables";
 //mixins
 
 @mixin resetAll{
@@ -13,14 +14,15 @@
 }
 
 //reset <a>
-@mixin reset-link{
+@mixin reset-link($color){
     text-decoration: none;
+    color: $color;
 }
 
 //full screen
-@mixin fullscreen{
-    width: 100vw;
-    height: 100vh;
+@mixin fullscreen($width,$height){
+    width: $width;
+    height: $height;
 }
 
 //display flex
@@ -52,3 +54,54 @@
     display: flex
 };
 
+//Background Image - Cover
+
+@mixin backgroundImage($url){
+    background-image: url($url);
+    background-size: cover;
+}
+
+//wrapper
+
+@mixin wrapperCenter($size, $direction){
+    width: $size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    margin: auto;
+}
+
+//title
+
+@mixin title($fontsize, $align, $color){
+    width: 100%;
+    text-align: $align;
+    @include fontSize($fontsize);
+    color: $color;
+    font-weight: 700;
+    font-family: $font-title;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: #cdcdcd;
+}
+
+//subtitle
+
+@mixin subtitle($fontsize, $align, $color){
+    width:100%;
+    text-align: $align;
+    @include fontSize($fontsize);
+    color: $color;
+    font-weight: 400;
+}
+
+//text
+
+@mixin text($fontsize, $align, $color){
+    width:100%;
+    text-align: $align;
+    @include fontSize($fontsize);
+    color: $color;
+    font-weight: 400;
+    font-family: $font-text;
+}
