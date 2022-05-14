@@ -1,0 +1,44 @@
+@import "../../abstract/functions","../../abstract/responsive","../../abstract/variables";
+@import "~bootstrap/scss/bootstrap";
+
+
+.faqs{
+    @include fullscreen(100vw,auto);
+
+    @include displayflex(justify-content, center);
+    flex-direction: column;
+    padding: 80px 0x;
+
+        &__title{
+            @include title(40px, center, $color-text, $color4);
+            margin: 50px 0px;
+
+                //tablet
+                @include for-tablet-only{
+                    margin-bottom: 30px;
+                }
+        }
+
+        &__container{
+            @include wrapperCenter(80%, column);
+
+            padding: 30px 0px;
+
+            &-item{
+                width: 1000px;
+                margin: 5px;
+                color: $color-text;
+                padding: 10px;
+
+                //tablet
+                @include for-tablet-only{
+                    width: 600px;
+                }
+
+                //phone
+                @include for-phone-only{
+                    width: 320px;
+                }
+            }
+        }
+}
