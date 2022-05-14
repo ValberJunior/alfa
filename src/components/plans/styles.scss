@@ -5,95 +5,98 @@
     @include fullscreen(100vw,auto);
     @include backgroundImage("../../assets/background2.jpg");
     background-attachment: fixed;
-    @include displayflex(justify-content,center);
-    flex-direction: column;
-
-    padding: 80px 0px; //mexer
-
-    &__title{
-        width: 100vw;
-        @include title(56px,center, $color4, $color-text);
-        margin-bottom: 50px;
-
-        //tablet
-        @include for-tablet-only{
-            @include fontSize(45px);
-        }
-
-        //phone
-        @include for-phone-only{
-            @include fontSize(35px);
-        }
-    }
 
     &__container{
-        @include wrapperCenter(80%, row);
 
-        //phone
-        @include for-phone-only{
-            @include wrapperCenter(80%, column);
-        }
+        @include displayflex(justify-content,center);
+        flex-direction: column;
 
-        .content{
-
-            &__titleCard{
-                @include title(32px, center, $color-text, $color5);
-                padding-bottom: 10px;
-                border-bottom: 2px solid $color8;
-
-                //tablet
-                @include for-tablet-only{
-                @include fontSize(25px);
-                }
-
-                //phone
-                @include for-phone-only{
-                @include fontSize(23px);
-                }
-
-            }
-
-            &__list{
-
-                align-self: flex-start;
-                padding: 30px 0px;
-
-                //tablet
-                @include for-tablet-only{
-                    padding: 30px 2px;
-                }
-
-                li{
-                    display: flex;
-                    align-items: center;
-                    @include subtitle(18px, flex-start, $color-text);
-                    margin: 5px 0px;
+        
+                &-title{
+                    width: 100vw;
+                    @include title(52px,center, $color4, $color-text);
+                    margin-bottom: 50px;
 
                     //tablet
                     @include for-tablet-only{
-                        @include fontSize(16px);
+                        @include fontSize(45px);
                     }
 
                     //phone
                     @include for-phone-only{
-                     @include fontSize(16px);
+                        @include fontSize(35px);
                     }
                 }
 
-                &-icon{
-                        width: 50px;
-                        height: 50px;
+                &-content{
+                    @include wrapperCenter(80%, row);
 
-                    //tablet
-                    @include for-tablet-only{
-                        width: 40px;
-                        height: 40px;
+                    //phone
+                    @include for-phone-only{
+                        @include wrapperCenter(80%, column);
+                    }
+
+                    .content{
+
+                        &__titleCard{
+                            @include title(32px, center, $color-text, $color5);
+                            padding-bottom: 10px;
+                            border-bottom: 2px solid $color8;
+
+                            //tablet
+                            @include for-tablet-only{
+                            @include fontSize(25px);
+                            }
+
+                            //phone
+                            @include for-phone-only{
+                            @include fontSize(23px);
+                            }
+
+                        }
+
+                        &__list{
+
+                            align-self: flex-start;
+                            padding: 30px 0px;
+
+                            //tablet
+                            @include for-tablet-only{
+                                padding: 30px 2px;
+                            }
+
+                            li{
+                                display: flex;
+                                align-items: center;
+                                @include subtitle(18px, flex-start, $color-text);
+                                margin: 5px 0px;
+
+                                //tablet
+                                @include for-tablet-only{
+                                    @include fontSize(16px);
+                                }
+
+                                //phone
+                                @include for-phone-only{
+                                @include fontSize(16px);
+                                }
+                            }
+
+                            &-icon{
+                                    width: 50px;
+                                    height: 50px;
+
+                                //tablet
+                                @include for-tablet-only{
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+                        }
+
+                        
                     }
                 }
-            }
-
-            
-        }
     }
 
 }
