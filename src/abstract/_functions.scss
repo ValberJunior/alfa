@@ -74,15 +74,15 @@
 
 //title
 
-@mixin title($fontsize, $align, $color){
+@mixin title($fontsize, $align, $color1, $color2){
     width: 100%;
     text-align: $align;
     @include fontSize($fontsize);
-    color: $color;
+    color: $color1;
     font-weight: 700;
     font-family: $font-title;
     -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: #cdcdcd;
+    -webkit-text-stroke-color: $color2;
 }
 
 //subtitle

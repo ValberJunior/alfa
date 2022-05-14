@@ -14,21 +14,27 @@ export const TEXTS = [
 export const PLANS = [
 {
     title: "PACOTE SIMPLES",
-    opt1:"Suporte on-line para o assessorado",
-    opt2:"Pré inscrição universitária",
-    opt3:"Legalização de documentos necessários",
-    opt4:"Auxilio de trâmites de DNI",
-    opt5:"Pagamentos de taxas dos orgãos do Governo Argentino",
-    price:"R$ 2500,00"
+    options: [
+        {opt:"Suporte on-line para o assessorado", key:1},
+        {opt:"Pré inscrição universitária",key:2 },
+        {opt:"Legalização de documentos necessários", key:3},
+        {opt:"Auxilio de trâmites de DNI", key:4},
+        {opt:"Pagamentos de taxas dos orgãos do Governo Argentino", key:5},
+    ],
+    price:"R$ 2500,00",
+    link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
 },
 {
     title: "PACOTE PREMIUM",
-    opt1:"Auxílio nos trâmites residenciais na Argentina",
-    opt2:" Recepção no aeroporto",
-    opt3:" Orientação acadêmicas",
-    opt4:" Chip e cartão de transporte público.",
-    opt5:" Além dos citados no pacote simples",
-    price:"R$ 3000,00"
+    options:[
+        {opt:"Auxílio nos trâmites residenciais na Argentina", key: 6},
+        {opt:" Recepção no aeroporto", key: 7},
+        {opt:" Orientação acadêmicas", key: 8},
+        {opt:" Chip e cartão de transporte público.", key: 9},
+        {opt:" Além dos citados no pacote simples", key: 10},
+    ],
+    price:"R$ 3000,00",
+    link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
 }
 ]
 

@@ -1,0 +1,29 @@
+@import "../../abstract/variables","../../abstract/functions","../../abstract/responsive";
+
+
+.plan-card{
+    width: 420px;
+    height: 520px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: $color4;
+    border-radius: 50px;
+    margin: 15px;
+    
+    @include displayflex(justify-content,center);
+    flex-direction: column;
+    align-items: center;
+
+
+    //tablet
+    @include for-tablet-only{
+        width: 500px;
+        padding: 5px;
+    }
+
+    //phone
+    @include for-phone-only{
+        width: 320px;
+    }
+
+}
