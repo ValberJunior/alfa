@@ -31,6 +31,7 @@ const Plans = () => {
                                 )
                             })}
                         </ul>
+                        <span className="content__price">{SIMPLE.price}</span>
                         <a href={SIMPLE.link}>
                             <Button>
                                 Saiba mais
@@ -51,6 +52,7 @@ const Plans = () => {
                                 )
                             })}
                         </ul>
+                        <span className="content__price">{PREMIUM.price}</span>
                         <a href={PREMIUM.link}>
                             <Button>
                                 Saiba mais

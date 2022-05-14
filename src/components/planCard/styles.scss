@@ -3,7 +3,7 @@
 
 .plan-card{
     width: 420px;
-    height: 600px;
+    height: 620px;
     overflow: hidden;
     padding: 10px;
     background-color: $color4;
@@ -18,13 +18,13 @@
     //tablet
     @include for-tablet-only{
         width: 530px;
-        height: 550px;
+        height: 600px;
     }
 
     //phone
     @include for-phone-only{
         width: 320px;
-        height: 520px;
+        height: 620px;
     }
 
 }

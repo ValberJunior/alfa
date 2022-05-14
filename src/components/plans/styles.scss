@@ -6,6 +6,9 @@
     @include backgroundImage("../../assets/background2.jpg");
     background-attachment: fixed;
 
+    @include displayflex(justify-content,space-between);
+    flex-direction: column;
+
     &__container{
 
         @include displayflex(justify-content,center);
@@ -92,6 +95,11 @@
                                     height: 40px;
                                 }
                             }
+                        }
+
+                        &__price{
+                            padding-bottom: 30px;
+                            @include title(40px, center, $color-text, $color8);
                         }
 
                         
