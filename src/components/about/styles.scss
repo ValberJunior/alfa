@@ -1,0 +1,81 @@
+@import "../../abstract/variables","../../abstract/functions","../../abstract/responsive";
+
+.about{
+
+    @include fullscreen(100vw, auto);
+
+    &__content{
+
+        @include wrapperCenter(70%, row);
+        padding: 100px 0px;
+
+        //tablet
+        @include for-tablet-only{
+            @include wrapperCenter(80%, column);
+        }
+        
+        //phone
+        @include for-phone-only{
+            @include wrapperCenter(80%, column);
+        }
+
+        &-img{
+            width: 350px;
+
+            //tablet
+            @include for-tablet-only{
+                width: 300px;
+                margin-bottom: 50px;
+                }
+
+            //phone
+            @include for-phone-only{
+                width: 250px;
+                margin-bottom: 50px;
+             }
+
+        }
+
+        &-desc{
+            @include wrapperCenter(60%, column);
+
+             //tablet
+            @include for-tablet-only{
+            @include wrapperCenter(90%, column);
+            }
+
+            //phone
+            @include for-phone-only{
+                @include wrapperCenter(95%, column);
+             }
+
+            .desc{
+
+                &__title{
+                    @include title(40px, center, $color-text, $color8);
+                    margin-bottom: 40px;
+                }
+
+                &__text{
+                    text-indent: 2rem;
+                    @include text(18px, flex-start, $color-text);
+                    margin-bottom: 30px;
+
+                    //phone
+                    @include for-phone-only{
+                        text-indent: 0rem;
+                        @include text(16px, center, $color-text);
+                    }
+                    
+                }
+
+                &__subtitle{
+                    @include subtitle(22px, center, $color6);
+                }
+
+            }
+        }
+
+    }
+
+}

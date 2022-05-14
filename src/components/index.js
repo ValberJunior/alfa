@@ -8,3 +8,4 @@ export { default as KnowMore } from "./knowMore/KnowMore";
 export { default as Button} from "./button/Button";
 export {default as Plans} from "./plans/Plans";
 export { default as PlanCard} from "./planCard/PlanCard";
+export { default as About } from "./about/About"
