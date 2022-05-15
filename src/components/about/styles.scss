@@ -6,6 +6,12 @@
     @include displayflex(justify-content, center);
     align-items: center;
 
+    //phone
+    @include for-phone-only{
+      @include fullscreen(100vw, auto);
+      padding: 60px 0px;
+    }
+
     &__content{
 
         @include wrapperCenter(70%, row);

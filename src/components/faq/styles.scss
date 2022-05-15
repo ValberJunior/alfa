@@ -25,6 +25,7 @@
 
             padding-bottom: 50px;
 
+
             &-item{
                 width: 1000px;
                 margin: 5px;
@@ -39,7 +40,7 @@
 
                 //phone
                 @include for-phone-only{
-                    width: 320px;
+                    width: 350px;
                 }
             }
         }

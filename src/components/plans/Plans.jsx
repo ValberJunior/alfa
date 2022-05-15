@@ -34,7 +34,7 @@ const Plans = () => {
                         <span className="content__price">{SIMPLE.price}</span>
                         <a href={SIMPLE.link}>
                             <Button>
-                                Saiba mais  <i class="fa-solid fa-angles-right"></i>
+                                Saiba mais  <i className="fa-solid fa-angles-right"></i>
                             </Button>
                         </a>
                     </PlanCard>
@@ -55,7 +55,7 @@ const Plans = () => {
                         <span className="content__price">{PREMIUM.price}</span>
                         <a href={PREMIUM.link}>
                             <Button>
-                                Saiba mais  <i class="fa-solid fa-angles-right"></i>
+                                Saiba mais  <i className="fa-solid fa-angles-right"></i>
                             </Button>
                         </a>
                     </PlanCard>

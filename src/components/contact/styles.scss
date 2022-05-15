@@ -12,6 +12,17 @@
             padding: 150px 0px 10px 0px;
             align-self: center;
 
+            //tablet
+            @include for-tablet-only{
+                @include fontSize(38px);
+            }
+
+            //phone
+            @include for-phone-only{
+                padding: 70px 0px 10px 0px;
+                 @include fontSize(35px)
+            }
+
             }
 
             &__container{
@@ -22,11 +33,32 @@
                 align-self: center;
 
 
+                //tablet
+                @include for-tablet-only{
+                    padding: 60px 0px;
+                }
+
+                //phone
+                @include for-phone-only{
+                    padding: 60px 0px;
+                }
+
+
                     .content{
 
                         &__data{
                             @include displayflex(justify-content, center);
                             align-items: center;
+
+                                   //tablet
+                                    @include for-tablet-only{
+                                        @include wrapperCenter(500px, row)
+                                    }
+
+                                    //phone
+                                    @include for-phone-only{
+                                        @include wrapperCenter(340px, column)
+                                    }
 
                                 &-inputs{
                                     @include displayflex(justify-content, center);
@@ -34,10 +66,26 @@
                                     width: 40%;
                                     margin: 5px;
 
+                                    //tablet
+                                    @include for-tablet-only{
+                                      width: 32%;
+                                    }
+
+                                    //phone
+                                    @include for-phone-only{
+                                        width: 320px;
+                                    }
+
+
                                     label{
                                         @include subtitle(18px, start, $color-text);
                                         margin-left: 5px;
                                         margin-bottom: 5px;
+
+                                        //tablet
+                                        @include for-tablet-only{
+                                             @include fontSize(16px);
+                                        }
 
 
                                     }
@@ -63,6 +111,11 @@
                                 @include subtitle(18px, start, $color-text);
                                 margin-bottom: 5px;
                                 margin-left: 5px;
+
+                                //tablet
+                                 @include for-tablet-only{
+                                     @include fontSize(16px);
+                                 }
                             }
 
                             input, textarea{
@@ -84,6 +137,12 @@
 
                         &__button{
                             @include displayflex(justify-content, flex-end);
+
+                            //phone
+                            @include for-phone-only{
+                                @include displayflex(justify-content, center);
+                                padding: 30px 0px;
+                            }
                         }
 
                     }

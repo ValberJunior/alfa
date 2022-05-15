@@ -17,7 +17,7 @@ const Text = TEXTS[0]
      
                     <a href={Text.link} className="content__desc-link">
                         <Button>
-                            Saiba mais  <i class="fa-solid fa-angles-right"></i>
+                            Saiba mais  <i className="fa-solid fa-angles-right"></i>
                         </Button>
                     </a>
 
