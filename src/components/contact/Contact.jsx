@@ -5,8 +5,8 @@ import { Button, WavesFooter } from "../../components";
 const Contact = () => {
   return (
     <section className="contact">
-
-       <h2 className="contact__title">
+      <span id="contact"/>
+       <h2 className="contact__title" >
            Entre em contato 
        </h2> 
        

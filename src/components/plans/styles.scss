@@ -18,7 +18,7 @@
                 &-title{
                     width: 100vw;
                     @include title(52px,center, $color4, $color-text);
-                    margin-bottom: 50px;
+                    margin-bottom: 70px;
 
                     //tablet
                     @include for-tablet-only{

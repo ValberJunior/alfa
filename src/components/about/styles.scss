@@ -2,12 +2,14 @@
 
 .about{
 
-    @include fullscreen(100vw, auto);
+    @include fullscreen(100vw, 100vh);
+    @include displayflex(justify-content, center);
+    align-items: center;
 
     &__content{
 
         @include wrapperCenter(70%, row);
-        padding: 100px 0px;
+
 
         //tablet
         @include for-tablet-only{

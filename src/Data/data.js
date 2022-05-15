@@ -39,22 +39,3 @@ export const PLANS = [
 ]
 
 
-
-export const SOCIALMEDIA = [
-    { 
-        title: "Facebook",
-        link: "https://www.facebook.com/Alfaassessoriaestudantil" 
-    },
-    { 
-        title: "Instagram",
-        link: "https://www.instagram.com/alfaestudantil/" 
-    },
-    { 
-        title: "Email",
-        link: "alfaassessoriaestudantil@gmail.com" 
-    },
-    { 
-        title: "whatsapp",
-        link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
-    },
-]

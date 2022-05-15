@@ -8,7 +8,7 @@ const About = () => {
 const Text = TEXTS[1];    
 
   return (
-    <section className="about">
+    <section className="about" id="about">
         <article className="about__content">
             <img src={LogoAlfa} alt="logo Alfa Assessoria" className="about__content-img"/>
 

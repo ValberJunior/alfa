@@ -10,10 +10,10 @@ const Navbar = () => {
   const NavbarMenu = ()=>{
     return(
       <ul className="navbar__menu">
-          <li className="navbar__menu-item">Home</li>
-          <li className="navbar__menu-item">Sobre</li>
-          <li className="navbar__menu-item">Planos</li>
-          <li className="navbar__menu-item">Contato</li>
+          <li className="navbar__menu-item"><a href="#" className="navbar__menu-item-link">Home</a></li>
+         <li className="navbar__menu-item"> <a href="#about" className="navbar__menu-item-link">Sobre</a></li>
+          <li className="navbar__menu-item"> <a href="#plans" className="navbar__menu-item-link">Planos</a></li>
+          <li className="navbar__menu-item"><a href="#contact" className="navbar__menu-item-link">Contato</a></li>
       </ul>
     )
   }

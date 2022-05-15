@@ -2,5 +2,95 @@
 
 
 .footer{
+    @include fullscreen(100vw, auto);
     background: $color2;
+    @include displayflex(justify-content,center);
+    flex-direction: column;
+    align-items: center;
+
+    &__content{
+
+        padding: 40px 0px;
+
+        @include wrapperCenter(70%,row);
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+        .university{
+            width: 33,33%;
+            height: 200px;
+            @include displayflex(justify-content,center);
+            flex-direction: column;
+            align-items: center;
+
+            &__title{
+                @include subtitle(20px,center,$color4);
+            }
+
+            &__link{
+                color: $color4;
+                @include reset-link($color4);
+                margin-top: 5px;
+            }
+
+        }
+
+        .map{
+            width: 33,33%;
+            height: 200px;
+            @include displayflex(justify-content,flex-start);
+            flex-direction: column;
+            align-items: center;
+
+            &__title{
+                @include subtitle(20px,center,$color4);
+            }
+
+            &__link{
+                color: $color4;
+                @include reset-link($color4);
+            }
+        }
+
+        .adress{
+
+            width: 33,33%;
+            height: 200px;
+            @include displayflex(justify-content,center);
+            flex-direction: column;
+            align-items: center;
+
+            &__item{
+                color: $color4;
+            }
+
+        }
+
+
+    }
+
+    &__socialMedia{
+        @include wrapperCenter(40%, center);
+        padding: 70px 0px;
+
+        &-link{
+            @include reset-link($color4);
+            @include fontSize(50px);  
+            
+            i{
+                margin: 5px;
+            }
+        }
+
+    }
+
+    &__copyright{
+        @include wrapperCenter(70%, center);
+        @include fontSize(16px);
+        color: $color4;
+        border-top: 2px solid $color4;
+        padding: 30px;
+    }
+
 }

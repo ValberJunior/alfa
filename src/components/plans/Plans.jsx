@@ -13,7 +13,7 @@ const Plans = () => {
 
         <WavesTop/>
 
-        <article className="plans__container">
+        <article className="plans__container" id="plans">
 
         <h2 className="plans__container-title">Nossos Pacotes</h2>
 

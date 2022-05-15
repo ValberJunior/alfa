@@ -5,13 +5,14 @@
 .faqs{
     @include fullscreen(100vw,auto);
 
+
     @include displayflex(justify-content, center);
     flex-direction: column;
     padding: 80px 0x;
 
         &__title{
             @include title(40px, center, $color-text, $color4);
-            margin: 50px 0px;
+            margin: 60px 0px;
 
                 //tablet
                 @include for-tablet-only{
@@ -22,13 +23,14 @@
         &__container{
             @include wrapperCenter(80%, column);
 
-            padding: 30px 0px;
+            padding-bottom: 50px;
 
             &-item{
                 width: 1000px;
                 margin: 5px;
                 color: $color6;
                 padding: 10px;
+                border-radius: 15px!important;
 
                 //tablet
                 @include for-tablet-only{

@@ -10,7 +10,23 @@
 
             &-item{
                 margin-right: 10px;
-                @include fontSize(16px);
+
+                &-link{
+
+                    @include reset-link($color6);
+                    @include fontSize(16px);
+                    cursor: pointer;
+                    transition: all .7s linear ;
+
+                    &:hover{
+                        color: $color2;
+                    }
+
+                    &:active{
+                        color: $color1;
+                    }
+ 
+                }
 
                 @include for-phone-only{
                     display: none;
