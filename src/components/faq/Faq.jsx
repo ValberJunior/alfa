@@ -46,7 +46,7 @@ function Faq() {
                     <Accordion.Item eventKey="4"  className="faqs__container-item">
                         <Accordion.Header >Qual o custo de vida de morar em Rosário?</Accordion.Header>
                             <Accordion.Body>
-                            Acesse o site <a href='https://www.expatistan.com/pt/custo-de-vida/rosario'>aqui</a> e fique por dentro do custo de vida
+                            Acesse <a href='https://www.expatistan.com/pt/custo-de-vida/rosario'>aqui</a> e fique por dentro do custo de vida
                             </Accordion.Body>
                     </Accordion.Item>
 

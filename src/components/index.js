@@ -10,3 +10,6 @@ export {default as Plans} from "./plans/Plans";
 export { default as PlanCard} from "./planCard/PlanCard";
 export { default as About } from "./about/About"
 export {default as Faq} from "./faq/Faq";
+export {default as Contact} from "./contact/Contact";
+export { default as WavesFooter } from "./waves/WavesFooter";
+export { default as Footer} from "./footer/Footer";
