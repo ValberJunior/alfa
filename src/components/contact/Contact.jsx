@@ -1,4 +1,4 @@
-import "./styles.scss";
+import "./_contact.scss";
 import { Button, WavesFooter } from "../../components";
 
 

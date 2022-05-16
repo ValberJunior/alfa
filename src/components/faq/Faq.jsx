@@ -1,4 +1,4 @@
-import "./styles.scss";
+import "./_faq.scss";
 import 'bootstrap/dist/css/bootstrap.css';
 
 import React from 'react'

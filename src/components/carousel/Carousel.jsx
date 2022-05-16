@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles.scss";
+import "./_carousel.scss";
 import  Banner  from "../../assets/1.png";
 import  Banner2  from "../../assets/2.png";
 

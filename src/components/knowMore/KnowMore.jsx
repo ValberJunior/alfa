@@ -1,4 +1,4 @@
-import "./styles.scss";
+import "./_knowMore.scss";
 import Button from "../button/Button";
 import { TEXTS } from "../../Data/data";
 import Image1 from "../../assets/image1.png"

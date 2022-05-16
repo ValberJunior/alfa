@@ -1,4 +1,4 @@
-import "./styles.scss"
+import "./_planCard.scss"
 
 import React from 'react'
 

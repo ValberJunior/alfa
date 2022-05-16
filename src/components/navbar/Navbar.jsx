@@ -1,4 +1,4 @@
-import "./styles.scss";
+import "./_navbar.scss";
 import Menu from "../../assets/menu.gif";
 import Logo from "../../assets/Alfa com letras.png"
 

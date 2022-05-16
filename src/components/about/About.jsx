@@ -1,6 +1,6 @@
 import { TEXTS } from "../../Data/data";
 import LogoAlfa from "../../assets/icone.png";
-import "./styles.scss";
+import "./_about.scss";
 
 
 const About = () => {

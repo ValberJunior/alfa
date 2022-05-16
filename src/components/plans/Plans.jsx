@@ -1,4 +1,4 @@
-import "./styles.scss";
+import "./_plans.scss";
 import { PLANS } from "../../Data/data";
 import Icons from "../../assets/opt.gif";
 import { WavesTop, PlanCard, Button, WavesBottom} from "../../components";
