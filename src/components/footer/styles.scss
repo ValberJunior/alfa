@@ -15,16 +15,17 @@
         @include wrapperCenter(70%,row);
         align-items: flex-start;
         justify-content: space-between;
+        flex-wrap: nowrap;
 
 
         //tablet
         @include for-tablet-only{
-            @include wrapperCenter(95%,row);
+            flex-wrap: wrap;
         }
 
         //phone
         @include for-phone-only{
-            @include wrapperCenter(90%,column);
+            flex-wrap: wrap;
         }
 
 
@@ -34,6 +35,11 @@
             @include displayflex(justify-content,center);
             flex-direction: column;
             align-items: center;
+
+            //table
+            @include for-tablet-only{
+                width: 50%;
+            }
             
             &__title{
                 @include subtitle(20px,center,$color4);
@@ -73,6 +79,11 @@
             @include displayflex(justify-content,flex-start);
             flex-direction: column;
             align-items: center;
+
+            //table
+            @include for-tablet-only{
+                width: 50%;
+            }
 
             //phone
             @include for-phone-only{
@@ -114,6 +125,11 @@
             @include displayflex(justify-content,center);
             flex-direction: column;
             align-items: center;
+
+            //table
+            @include for-tablet-only{
+                width: 50%;
+            }
 
             //phone
             @include for-phone-only{

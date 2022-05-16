@@ -9,11 +9,11 @@
     position: relative;
 
     @include for-phone-only{
-        height: 45vh;
+        height: 40vh;
     }
 
     @include for-tablet-only{
-        height: 55vh;
+        height: 50vh;
     }
 
     &-banner{

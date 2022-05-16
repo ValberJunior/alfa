@@ -1,7 +1,42 @@
-import React from 'react'
-import { About, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components'
+import "./styles.scss";
+import { About, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components';
+import { useState } from 'react';
+
+
+// //animation
+// import Aos from "aos";
+// import "aos/dist/aos.css";
+
+
+
 
 const Home = () => {
+
+  const [visible, setVisible] = useState(false);
+  // const [isLoading, setIsLoading] = useState(true);
+
+        //animation
+        // useEffect(()=>{
+        //   setTimeout(()=>{
+        //     setIsLoading(false)
+        //   },2500);
+        //   Aos.init({duration: 2500});
+        // },[]);
+    
+        const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 1000){
+          setVisible(true);
+
+        } 
+        else if (scrolled <= 1000){
+          setVisible(false)
+        }
+      };
+
+      window.addEventListener('scroll', toggleVisible);
+
+
   return (
     <>
       <Header/>
@@ -13,6 +48,12 @@ const Home = () => {
       <Faq/>
       <Contact/>  
       <Footer/>   
+      <a
+         href="#"
+         style={{opacity: visible ? '0.4' : '0'}}
+          className="top">
+            <i className="fa-solid fa-chevron-up"></i>
+       </a>
     </>
   )
 }

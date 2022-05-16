@@ -1,61 +1,52 @@
 import "./styles.scss";
 import Menu from "../../assets/menu.gif";
-import { useState } from "react";
+import Logo from "../../assets/Alfa com letras.png"
 
 
-const Navbar = () => {
+const NavbarSection = () => {
 
-  const [show, setShow] = useState(false);
-
-  const NavbarMenu = ()=>{
-    return(
-      <ul className="navbar__menu">
-          <li className="navbar__menu-item"><a href="#" className="navbar__menu-item-link">Home</a></li>
-         <li className="navbar__menu-item"> <a href="#about" className="navbar__menu-item-link">Sobre</a></li>
-          <li className="navbar__menu-item"> <a href="#plans" className="navbar__menu-item-link">Planos</a></li>
-          <li className="navbar__menu-item"><a href="#contact" className="navbar__menu-item-link">Contato</a></li>
-      </ul>
-    )
-  }
-
-  const MenuMobile = ()=>{
-    return(
-      <ul className={`navbar__menu-mobile-opts ${(show == false)?null: "navbar__menu-mobile-opts-show"}`}>
-      <li className="navbar__menu-mobile-items">Home</li>
-      <li className="navbar__menu-mobile-items">Sobre</li>
-      <li className="navbar__menu-mobile-items">Planos</li>
-      <li className="navbar__menu-mobile-items">Contato</li>
-      </ul>
-    )
-  };
-
-  const HandleMenu = ()=>{
-   setShow(!show);
-  }
 
   return (
     <>
 
 
 
-      <nav className="navbar">
+        <nav className='navbar navbar-expand-sm navbar-light bg-light'>
 
-          {NavbarMenu()}
+            <div className='container-md'>
+                {/* <!--My Logo--> */}
+                <img src={Logo} alt='logo Alfa Assessoria' type='image/png' width='80px'/>
+                
 
-          <div className="navbar__menu-mobile">
-    
-        {MenuMobile()}
-      </div>
+                {/* <!--My button - mobile version--> */}
+                <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#menu'>
+                    <img src={Menu} width='40px' className=""/>
+                </button>
 
-      </nav>
+                {/* <!--My menu navbar--> */}
+                <div className='collapse navbar-collapse justify-content-end' id='menu' >
+                    <ul className='navbar-nav text-center pt-sm-3'>
+                        <li className='nav-item'><a href='#' className='nav-link active '>Home</a></li>
+                        <li className='nav-item'><a href='#about' className='nav-link '>Sobre</a></li>
+                        <li className='nav-item'><a href='#plans' className='nav-link '>Planos</a></li>
+                        <li className='nav-item'><a href='#contact' className='nav-link '>Contato</a></li>
+                    </ul>
+                </div>
 
-      <button className="navbar__menu-button" onClick={HandleMenu} >
-        <img src={Menu} className="menu"/>
-      </button>
+            </div>
+            
+        </nav>
 
 
     </>
   )
 }
 
-export default Navbar;
+export default NavbarSection;
+
+
+
+
+
+
+

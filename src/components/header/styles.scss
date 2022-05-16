@@ -5,7 +5,7 @@
 
 .header{
     width: 100vw;
-    background-color: $color4;
+    background: $color4;
 
     position: sticky;
     top:0;
@@ -15,6 +15,7 @@
     z-index: 9999; 
 
     @include for-phone-only{
+        position: static;
         background: $color4;
         z-index: 99999;
     }
@@ -36,9 +37,5 @@
             @include for-tablet-only{
                 width: 85%;
             }
-        }
-
-        &__logo{
-            width: 80px;
         }
 }
