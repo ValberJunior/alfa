@@ -16,6 +16,7 @@
         align-items: flex-start;
         justify-content: space-between;
 
+
         //tablet
         @include for-tablet-only{
             @include wrapperCenter(95%,row);
@@ -23,7 +24,7 @@
 
         //phone
         @include for-phone-only{
-            @include wrapperCenter(70%,column);
+            @include wrapperCenter(90%,column);
         }
 
 

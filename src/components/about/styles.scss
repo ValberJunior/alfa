@@ -29,6 +29,7 @@
 
         &-img{
             width: 350px;
+            margin: 20px;
 
             //tablet
             @include for-tablet-only{
