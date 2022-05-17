@@ -42,17 +42,20 @@ const Contact = () => {
 };
 
   return (
-    <section className="contact"
-        data-aos="zoom-out-up"
-        data-aos-easing="ease-in"
-        data-aos-duration="1000">
+    <section className="contact">
 
       <span id="contact"/>
-       <h2 className="contact__title" >
+       <h2 className="contact__title"
+               data-aos="zoom-out-up"
+               data-aos-easing="ease-in"
+               data-aos-duration="1000">
        <AiOutlineMessage className="text-info"/> Fale conosco 
        </h2> 
        
-       <article className="contact__container">
+       <article className="contact__container"
+               data-aos="zoom-out-up"
+               data-aos-easing="ease-in"
+               data-aos-duration="1000">
 
             <form ref={formRef} onSubmit={(e)=>{sendEmail(e)}} className="comtact__container content">
 
@@ -77,7 +80,7 @@ const Contact = () => {
                       onChange={(e)=>{setForm({...form, course: e.target.value})}}
                       value={form.value}
                       >
-                        <option defaultValue >Selecione</option>
+                        <option selected>Selecione</option>
                           <option value="Arquitetura">Arquitetura</option>
                           <option value="Direito">Direito</option>
                           <option value="Engenharia Civil">Engenharia Civil</option>
@@ -107,7 +110,7 @@ const Contact = () => {
                         <img src={IconDone} alt="Done Icon Response" className="content__response-done"/>
                         </div>:null}
 
-                <div className="content__button">
+                <div className="content__button" data-aos="zoom-in" data-aos-easing="ease-in" data-aos-duration="500">
                     <Button type="submit" name="subscribe"
                      >
                        Enviar <FaRegEnvelope/>

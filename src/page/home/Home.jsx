@@ -13,22 +13,22 @@ import "aos/dist/aos.css";
 const Home = () => {
 
   const [visible, setVisible] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
         //animation
         useEffect(()=>{
-          setTimeout(()=>{
-            setIsLoading(false)
-          },2500);
+          // setTimeout(()=>{
+          //   setIsLoading(false)
+          // },2500);
           Aos.init({duration: 2500});
         },[]);
-    
+
         const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
         if (scrolled > 1000){
           setVisible(true);
 
-        } 
+        }
         else if (scrolled <= 1000){
           setVisible(false)
         }
@@ -39,9 +39,9 @@ const Home = () => {
 
   return (
     <>
-              {isLoading?
+              {/* {isLoading?
            (<AnimationLoading style={{display: isLoading ? 'inline' : 'none'}} />)
-           :(
+           :( */}
              <>
               <Header/>
               <Carousel/>
@@ -50,8 +50,8 @@ const Home = () => {
               <Plans/>
               <About/>
               <Faq/>
-              <Contact/>  
-              <Footer/>   
+              <Contact/>
+              <Footer/>
               <a
                 href="#"
                 style={{opacity: visible ? '0.4' : '0'}}
@@ -59,7 +59,7 @@ const Home = () => {
                     <AiFillUpCircle/>
               </a>
             </>
-      )}
+      {/* )} */}
     </>
   )
 }

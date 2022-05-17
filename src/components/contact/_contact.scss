@@ -157,6 +157,17 @@
                             @include fontSize(18px);
                             color: $color2;
                             padding-bottom:10px;
+                
+
+                            //phone
+                            @include for-phone-only{
+                                @include fontSize(14px);
+                                width: 100vw;
+                                display:flex;
+                                align-items: center;
+                                justify-content: center;
+
+                            }
 
                             &-done{
                                 width: 30px;

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
 
-        <section className="footer__content" data-aos="zoom-in">  
+        <section className="footer__content" data-aos="fade-up">  
 
                   
                   <article  className="footer__content university" >

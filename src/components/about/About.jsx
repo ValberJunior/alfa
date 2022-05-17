@@ -12,7 +12,7 @@ const Text = TEXTS[1];
         <article className="about__content"  data-aos="zoom-out-up" 
           data-aos-easing="ease-in" data-aos-duration="1000">
 
-            <img src={LogoAlfa} alt="logo Alfa Assessoria" loading="lazy"  className="about__content-img"/>
+            <img src={LogoAlfa} alt="logo Alfa Assessoria" loading="lazy"  className="about__content-img" data-aos="zoom-in"/>
 
             <div className="about__content-desc desc">
                 <h2 className="desc__title">{Text.title}</h2>
