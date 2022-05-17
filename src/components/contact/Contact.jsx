@@ -42,7 +42,11 @@ const Contact = () => {
 };
 
   return (
-    <section className="contact">
+    <section className="contact"
+        data-aos="zoom-out-up"
+        data-aos-easing="ease-in"
+        data-aos-duration="1000">
+
       <span id="contact"/>
        <h2 className="contact__title" >
        <AiOutlineMessage className="text-info"/> Fale conosco 

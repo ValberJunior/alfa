@@ -7,11 +7,14 @@ import { Accordion } from "react-bootstrap";
 function Faq() {
 
   return (
-    <section className="faqs">
+    <section className="faqs"
+    data-aos="zoom-out-up"
+    data-aos-easing="ease-in"
+    data-aos-duration="1000">
         
         <h2 className="faqs__title">Dúvidas Frequentes</h2>
        
-        <article className="faqs__container">
+        <article className="faqs__container" >
 
                 <Accordion flush>
 

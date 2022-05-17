@@ -2,10 +2,12 @@ import "./_planCard.scss"
 
 import React from 'react'
 
-const PlanCard = ({children}) => {
+const PlanCard = (props) => {
   return (
-    <div className="plan-card">
-        {children}
+    <div className="plan-card" data-aos={props.dataAos}
+      data-aos-easing="ease-in"
+      data-aos-duration="500">
+        {props.children}
     </div>
   )
 }

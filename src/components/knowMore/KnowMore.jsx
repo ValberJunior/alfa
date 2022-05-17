@@ -11,8 +11,9 @@ const Text = TEXTS[0]
   return (
     <section className="knowmore">
         <article className="knowmore__container content">
-            <img src={Image1} alt="medicine student" loading="lazy" className="content__img"/>
-            <div className="content__desc">
+            <img src={Image1} alt="medicine student" loading="lazy" className="content__img"
+                data-aos="fade-right"/>
+            <div className="content__desc" data-aos="fade-up">
                 <h2 className="content__desc-title">{Text.title}</h2>
                 <p className="content__desc-text">{Text.desc}</p>
      

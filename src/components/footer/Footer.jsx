@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="footer">
 
-        <section className="footer__content">  
+        <section className="footer__content" data-aos="zoom-in">  
 
                   
-                  <article  className="footer__content university">
+                  <article  className="footer__content university" >
                     <h4 className="university__title">Faculdades <FaUniversity/></h4>
                     <a className="university__link" href='https://uai.edu.ar/' rel="noreferrer" target="_blank">UAI</a>
                     <a className="university__link" href='https://iunir.edu.ar/'  rel="noreferrer" target="_blank">IUNIR</a>
@@ -32,7 +32,7 @@ const Footer = () => {
         </section>
 
         
-        <section className="footer__socialMedia">
+        <section className="footer__socialMedia" data-aos="fade-up">
           <a className="footer__socialMedia-link" href='https://www.facebook.com/Alfaassessoriaestudantil'   rel="noreferrer" target="_blank"><FaFacebook/></a>
           <a className="footer__socialMedia-link" href='https://www.instagram.com/alfaestudantil/'  rel="noreferrer"  target="_blank"><FaInstagram/></a>
           <a className="footer__socialMedia-link" href='mailto:alfaassessoriaestudantil@gmail.com'  rel="noreferrer" target="_blank"><FaRegEnvelope/></a>

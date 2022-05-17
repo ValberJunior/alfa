@@ -15,12 +15,15 @@ const Plans = () => {
 
         <article className="plans__container" id="plans">
 
-        <h2 className="plans__container-title">Nossos Pacotes</h2>
+        <h2 className="plans__container-title"
+         data-aos="zoom-in">
+             Nossos Pacotes
+        </h2>
 
                 <div className="plans__container-content content">
                     
                     {/* Simple */}
-                    <PlanCard>
+                    <PlanCard dataAos="fade-right">
                         <h3 className="content__titleCard">{SIMPLE.title}</h3>
                         <ul className="content__list">
                             {SIMPLE.options.map(item=>{
@@ -40,7 +43,7 @@ const Plans = () => {
                     </PlanCard>
 
                     {/* Premium */}
-                    <PlanCard>
+                    <PlanCard dataAos="fade-left">
                         <h3 className="content__titleCard" >{PREMIUM.title}</h3>
                         <ul className="content__list" >
                             {PREMIUM.options.map(item=>{
