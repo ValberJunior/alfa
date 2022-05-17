@@ -14,3 +14,4 @@ export {default as Contact} from "./contact/Contact";
 export { default as WavesFooter } from "./waves/WavesFooter";
 export { default as Footer} from "./footer/Footer";
 export { default as AnimationLoading } from "./animationLoading/AnimationLoading";
+export { default as Maps } from "./maps/Maps";

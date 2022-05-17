@@ -1,5 +1,5 @@
 import "./_home.scss";
-import { About, AnimationLoading, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components';
+import { About, AnimationLoading, Carousel, Contact, Faq, Footer, Header, KnowMore, Maps, Plans, Waves } from '../../components';
 import { useEffect, useState } from 'react';
 import { AiFillUpCircle } from "react-icons/ai";
 

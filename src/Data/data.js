@@ -6,7 +6,7 @@ export const TEXTS = [
 },
 {
     title: "Quem Somos Nós?",
-    desc: "Nós, da Alfa Assessoria Estudantil, cuidamos de toda a questão burocrática em relação a documentação, trâmites da faculdade, matrícula, trâmites de identidade argentina, residência, orientação , entre outros. Somos compostos também por estudantes e diferentemente de muitas assessorias que visam o lucro com altas taxas e assuntos rasos, buscamos a excelência de atendimento por um preço menor e justo, facilitando a todos a oportunidade de realizar o sonho de cursar medicina! E não só Medicina mas também Odontologia, Engenharia, Arquitetura, Medicina Veterinária e muitas outras opções! Comece hoje mesmo uma nova etapa para sua vida!",
+    desc: "Nós, da Alfa Assessoria Estudantil, cuidamos de toda a questão burocrática em relação a documentação, trâmites da faculdade, matrícula, trâmites de identidade argentina, residência, orientação , entre outros. Somos compostos também por estudantes e diferentemente de muitas assessorias que visam o lucro com altas taxas e assuntos rasos, buscamos a excelência de atendimento por um preço menor e justo, facilitando a todos a oportunidade de realizar o sonho de cursar medicina! E não só Medicina mas também Odontologia, Engenharia, Arquitetura, Medicina Veterinária e muitas outras opções!",
     subtitle: "Comece hoje mesmo uma nova etapa para sua vida!" 
 }
 ]

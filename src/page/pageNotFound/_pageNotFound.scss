@@ -14,12 +14,22 @@
 
         &-img{
             width: 800px;
+
+            //phone
+            @include for-phone-only{
+                width: 400px;
+            }
         }
 
 
         &-link{
             text-align: center;
             font-size: 68px;
+
+            //phone
+            @include for-phone-only{
+                margin-top:150px;
+            }
             
         }
     }
