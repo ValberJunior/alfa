@@ -7,5 +7,10 @@
    @include fullscreen(100vw, auto);
    @include displayflex(justify-content, space-between);
 
+   li{
+      margin: 5px;
+   }
+
+
 }
 

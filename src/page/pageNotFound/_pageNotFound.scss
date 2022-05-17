@@ -1,0 +1,27 @@
+@import "../../abstract/functions","../../abstract/responsive","../../abstract/variables";
+
+
+.pageNotFound{
+    @include fullscreen(100vw,100vh);
+    background-color: $color9;
+    @include displayflex(justify-content,center);
+    // align-items:center;
+
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+
+        &-img{
+            width: 800px;
+        }
+
+
+        &-link{
+            text-align: center;
+            font-size: 68px;
+            
+        }
+    }
+
+}

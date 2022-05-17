@@ -1,6 +1,8 @@
 import "./_navbar.scss";
 import Menu from "../../assets/menu.gif";
-import Logo from "../../assets/Alfa com letras.png"
+import Logo from "../../assets/Alfa com letras.png";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 
 const NavbarSection = () => {
@@ -30,6 +32,7 @@ const NavbarSection = () => {
                         <li className='nav-item'><a href='#about' className='nav-link '>Sobre</a></li>
                         <li className='nav-item'><a href='#plans' className='nav-link '>Planos</a></li>
                         <li className='nav-item'><a href='#contact' className='nav-link '>Contato</a></li>
+                        <li className='nav-item'><button className="btn btn-info text-light">Fale Conosco <FaWhatsapp/></button></li>
                     </ul>
                 </div>
 

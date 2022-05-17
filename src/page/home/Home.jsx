@@ -1,11 +1,11 @@
-import "./styles.scss";
-import { About, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components';
-import { useState } from 'react';
+import "./_home.scss";
+import { About, AnimationLoading, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components';
+import { useEffect, useState } from 'react';
+import { AiFillUpCircle } from "react-icons/ai";
 
-
-// //animation
-// import Aos from "aos";
-// import "aos/dist/aos.css";
+//animation
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -13,15 +13,15 @@ import { useState } from 'react';
 const Home = () => {
 
   const [visible, setVisible] = useState(false);
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
         //animation
-        // useEffect(()=>{
-        //   setTimeout(()=>{
-        //     setIsLoading(false)
-        //   },2500);
-        //   Aos.init({duration: 2500});
-        // },[]);
+        useEffect(()=>{
+          setTimeout(()=>{
+            setIsLoading(false)
+          },2500);
+          Aos.init({duration: 2500});
+        },[]);
     
         const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
@@ -39,21 +39,27 @@ const Home = () => {
 
   return (
     <>
-      <Header/>
-      <Carousel/>
-      <Waves/>
-      <KnowMore/>
-      <Plans/>
-      <About/>
-      <Faq/>
-      <Contact/>  
-      <Footer/>   
-      <a
-         href="#"
-         style={{opacity: visible ? '0.4' : '0'}}
-          className="top">
-            <i className="fa-solid fa-chevron-up"></i>
-       </a>
+              {isLoading?
+           (<AnimationLoading style={{display: isLoading ? 'inline' : 'none'}} />)
+           :(
+             <>
+              <Header/>
+              <Carousel/>
+              <Waves/>
+              <KnowMore/>
+              <Plans/>
+              <About/>
+              <Faq/>
+              <Contact/>  
+              <Footer/>   
+              <a
+                href="#"
+                style={{opacity: visible ? '0.4' : '0'}}
+                  className="top">
+                    <AiFillUpCircle/>
+              </a>
+            </>
+      )}
     </>
   )
 }

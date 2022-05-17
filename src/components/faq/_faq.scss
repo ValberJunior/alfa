@@ -4,6 +4,7 @@
 
 .faqs{
     @include fullscreen(100vw,auto);
+    background-color: $color10;
 
 
     @include displayflex(justify-content, center);

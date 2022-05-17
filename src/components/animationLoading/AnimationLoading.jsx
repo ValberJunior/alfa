@@ -1,8 +1,11 @@
 import "./_animationLoading.scss";
+import AlfaLogo from "../../assets/Alfa.png";
 
 const AnimationLoading = () => {
   return (
-    <div>AnimationLoading</div>
+    <section className="animation">
+        <img src={AlfaLogo} alt="" className="animation__logo" data-aos="zoom-out"/>
+    </section>
   )
 }
 

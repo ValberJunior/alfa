@@ -8,8 +8,10 @@
     background-color: $color4;
 
             &__title{
-            @include title(46px, center, $color-text, $color4);
-            padding: 150px 0px 10px 0px;
+            
+            @include title(40px, center, $color-text, $color4);
+            padding: 150px 0px 0px 0px;
+            margin-right: 10px;
             align-self: center;
 
             //tablet

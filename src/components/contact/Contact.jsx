@@ -1,5 +1,7 @@
 import "./_contact.scss";
 import { Button, WavesFooter } from "../../components";
+import { FaRegEnvelope } from "react-icons/fa";
+import { AiOutlineSend } from "react-icons/ai";
 
 
 const Contact = () => {
@@ -7,7 +9,7 @@ const Contact = () => {
     <section className="contact">
       <span id="contact"/>
        <h2 className="contact__title" >
-           Entre em contato 
+           Entre em contato <FaRegEnvelope className="text-info"/>
        </h2> 
        
        <article className="contact__container">
@@ -52,7 +54,7 @@ const Contact = () => {
                 <div className="content__button">
                     <Button type="submit" name="subscribe"
                      >
-                       Enviar Mensagem <i class="fa-solid fa-envelope"></i> 
+                       Enviar 
                      </Button>
                 </div>
 

@@ -165,7 +165,10 @@
 
         &-link{
             @include reset-link($color4);
-            @include fontSize(50px);  
+            @include fontSize(50px); 
+            margin: 5px;
+            
+            transition: all .4s linear;
 
             //tablet
             @include for-tablet-only{

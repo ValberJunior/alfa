@@ -44,7 +44,7 @@
                         &__titleCard{
                             @include title(32px, center, $color-text, $color5);
                             padding-bottom: 10px;
-                            border-bottom: 2px solid $color8;
+                           
 
                             //tablet
                             @include for-tablet-only{

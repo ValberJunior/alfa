@@ -21,7 +21,7 @@ export const PLANS = [
         {opt:"Auxilio de trâmites de DNI", key:4},
         {opt:"Pagamentos de taxas dos orgãos do Governo Argentino", key:5},
     ],
-    price:"R$ 2500,00",
+    price:"R$ 2800,00",
     link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
 },
 {
@@ -33,7 +33,7 @@ export const PLANS = [
         {opt:" Chip e cartão de transporte público.", key: 9},
         {opt:" Além dos citados no pacote simples", key: 10},
     ],
-    price:"R$ 3000,00",
+    price:"R$ 3500,00",
     link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
 }
 ]

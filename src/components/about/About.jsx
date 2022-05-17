@@ -10,7 +10,7 @@ const Text = TEXTS[1];
   return (
     <section className="about" id="about">
         <article className="about__content">
-            <img src={LogoAlfa} alt="logo Alfa Assessoria" className="about__content-img"/>
+            <img src={LogoAlfa} alt="logo Alfa Assessoria" loading="lazy"  className="about__content-img"/>
 
             <div className="about__content-desc desc">
                 <h2 className="desc__title" >{Text.title}</h2>
