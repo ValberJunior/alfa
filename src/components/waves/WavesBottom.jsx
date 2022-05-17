@@ -11,8 +11,8 @@ const WavesBottom = () => {
     >
       <defs>
         <linearGradient id="gradient">
-          <stop offset="5%" stop-color="#002bdc88"></stop>
-          <stop offset="95%" stop-color="#32ded488"></stop>
+          <stop offset="5%" stopColor="#002bdc88"></stop>
+          <stop offset="95%" stopColor="#32ded488"></stop>
         </linearGradient>
       </defs>
       <path
@@ -24,8 +24,8 @@ const WavesBottom = () => {
       ></path>
       <defs>
         <linearGradient id="gradient">
-          <stop offset="5%" stop-color="#002bdcff"></stop>
-          <stop offset="95%" stop-color="#32ded4ff"></stop>
+          <stop offset="5%" stopColor={"#002bdcff"}></stop>
+          <stop offset="95%" stopColor={"#32ded4ff"}></stop>
         </linearGradient>
       </defs>
       <path

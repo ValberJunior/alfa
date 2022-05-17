@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Home, PageNotFound } from "../page";
+import { Home, Maps, PageNotFound } from "../page";
 
 
 export default function MainRoutes(){
@@ -7,6 +7,7 @@ export default function MainRoutes(){
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="*" element={<PageNotFound/>}/>
+            <Route path="/maps" element={<Maps/>}/>
         </Routes>
     )
 }

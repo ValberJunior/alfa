@@ -1,10 +1,46 @@
+import emailjs from '@emailjs/browser';
+import React, { useEffect, useRef, useState } from 'react';
 import "./_contact.scss";
 import { Button, WavesFooter } from "../../components";
 import { FaRegEnvelope } from "react-icons/fa";
 import { AiOutlineMessage } from "react-icons/ai";
+import IconDone from "../../assets/done.gif";
+
 
 
 const Contact = () => {
+
+  useEffect(()=>{
+
+    setForm({name:"", email:"", course:"Selecione", subject:"", message:""});
+
+  },[]);
+
+  const formRef = useRef();
+  const [ done, setDone ] = useState(false);
+  const [form , setForm ] = useState({name:"", email:"", course:"Selecione", subject:"", message:""});
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+  emailjs.sendForm(
+                      process.env.REACT_APP_SERVICE_ID, 
+                      process.env.REACT_APP_TEMPLATE_ID, 
+                      formRef.current, 
+                      process.env.REACT_APP_PUBLIC_KEY
+                  )
+    .then((result) => {
+        console.log(result.text);
+        setDone(true);
+        setForm({name:"", email:"", course:"Selecione", subject:"", message:""});
+        setTimeout(()=>{
+          setDone(false)
+        },5000);
+    }, (error) => {
+        console.log(error.text);
+    });
+};
+
   return (
     <section className="contact">
       <span id="contact"/>
@@ -14,42 +50,58 @@ const Contact = () => {
        
        <article className="contact__container">
 
-
-            <form className="comtact__container content">
+            <form ref={formRef} onSubmit={(e)=>{sendEmail(e)}} className="comtact__container content">
 
                   <fieldset className="content__data">
                     <div className="content__data-inputs">
-                      <label for="name">Digite seu nome</label>
-                      <input type="text" name="name" id="name"/>
+                      <label htmlFor="name">Digite seu nome</label>
+                      <input type="text" name="name" id="name" required
+                       onChange={(e)=>{setForm({...form, name: e.target.value})}}
+                       value={form.name}/>
                     </div>
 
                     <div className="content__data-inputs">
-                      <label for="email">Digite seu Email</label>
-                      <input type="email" name="email" id="name" />
+                      <label htmlFor="email">Digite seu Email</label>
+                      <input type="email" name="email" id="name"  required
+                      onChange={(e)=>{setForm({...form, email: e.target.value})}}
+                      value={form.email} />
                     </div>
 
                     <div className="content__data-inputs">
-                      <label for="course">Selecione o curso</label>
-                      <select name='course'>
-                          <option selected>Selecionar</option>
-                          <option value="AQ">Arquitetura</option>
-                          <option value="DT">Direito</option>
-                          <option value="EG">Engenharia Civil</option>
-                          <option value="FS">Fisioterapia</option>
-                          <option value="MD">Medicina</option>
-                          <option value="MV">Medicina Veterinária</option>
-                          <option value="OD">Odontologia</option>
-                          <option value="OT">Outro</option>
+                      <label htmlFor="course">Selecione o curso</label>
+                      <select name='course'  required
+                      onChange={(e)=>{setForm({...form, course: e.target.value})}}
+                      value={form.value}
+                      >
+                        <option defaultValue >Selecione</option>
+                          <option value="Arquitetura">Arquitetura</option>
+                          <option value="Direito">Direito</option>
+                          <option value="Engenharia Civil">Engenharia Civil</option>
+                          <option value="Fisioterapia">Fisioterapia</option>
+                          <option value="Medicina">Medicina</option>
+                          <option value="Medicina Veterinária">Medicina Veterinária</option>
+                          <option value="Odontologia">Odontologia</option>
+                          <option value="Outro">Outro</option>
                       </select>
                     </div>
                   </fieldset>
 
                   <fieldset className="content__message">
-                       <label for="subject">Digite o Assunto</label>
-                       <input type="text" name="subject"  id="subject"/>
-                      <label for="message">Escreva sua mensagem</label>
-                      <textarea name="message" id="message" rows="5"></textarea>
+                       <label htmlFor="subject">Digite o Assunto</label>
+                       <input type="text" name="subject"  id="subject"  required
+                       onChange={(e)=>{setForm({...form, subject: e.target.value})}}
+                       value={form.subject}/>
+                      <label htmlFor="message">Escreva sua mensagem</label>
+                      <textarea name="message" id="message" rows="5" 
+                      onChange={(e)=>{setForm({...form, message: e.target.value})}}
+                      value={form.message}></textarea>
                   </fieldset>
+
+                  {done?
+                      <div className="content__response" role="alert">
+                        Mensagem Enviada com Sucesso
+                        <img src={IconDone} alt="Done Icon Response" className="content__response-done"/>
+                        </div>:null}
 
                 <div className="content__button">
                     <Button type="submit" name="subscribe"
@@ -57,6 +109,7 @@ const Contact = () => {
                        Enviar <FaRegEnvelope/>
                      </Button>
                 </div>
+        
 
             </form>
 

@@ -28,10 +28,10 @@ const NavbarSection = () => {
                 {/* <!--My menu navbar--> */}
                 <div className='collapse navbar-collapse justify-content-end' id='menu' >
                     <ul className='navbar-nav text-center pt-sm-3'>
-                        <li className='nav-item'><a href='#' className='nav-link active '>Home</a></li>
-                        <li className='nav-item'><a href='#about' className='nav-link '>Sobre</a></li>
-                        <li className='nav-item'><a href='#plans' className='nav-link '>Planos</a></li>
-                        <li className='nav-item'><a href='#contact' className='nav-link '>Contato</a></li>
+                        <li className='nav-item'><a href='/#' className='nav-link active '>Home</a></li>
+                        <li className='nav-item'><a href='/#about' className='nav-link '>Sobre</a></li>
+                        <li className='nav-item'><a href='/#plans' className='nav-link '>Planos</a></li>
+                        <li className='nav-item'><a href='/#contact' className='nav-link '>Contato</a></li>
                         <li className='nav-item'><a href="https://api.whatsapp.com/message/TWL6D4PXQ46BB1"><button className="btn btn-info text-light">Fale Conosco <FaWhatsapp/></button></a></li>
                     </ul>
                 </div>

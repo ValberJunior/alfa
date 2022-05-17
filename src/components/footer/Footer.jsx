@@ -1,5 +1,6 @@
 import "./_footer.scss";
 import { FaFacebook, FaInstagram, FaRegEnvelope, FaWhatsapp, FaUniversity, FaGlobeAmericas, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaRegCopyright} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
 
                   <article className="footer__content map">
                     <h4 className="map__title">Mapa</h4>
-                    <a className="map__link" href='/ytytyty'> <FaGlobeAmericas/> Localização</a>
+                    <Link to="/maps" className="map__link"> <FaGlobeAmericas/> Localização</Link>
                   </article>
 
 

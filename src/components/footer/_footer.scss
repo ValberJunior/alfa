@@ -166,9 +166,13 @@
         &-link{
             @include reset-link($color4);
             @include fontSize(50px); 
-            margin: 5px;
+            margin: 10px 5px;
             
             transition: all .4s linear;
+
+            &:hover{
+                margin-top: 0px;
+            }
 
             //tablet
             @include for-tablet-only{
