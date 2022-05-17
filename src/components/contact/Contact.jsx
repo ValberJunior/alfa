@@ -1,7 +1,7 @@
 import "./_contact.scss";
 import { Button, WavesFooter } from "../../components";
 import { FaRegEnvelope } from "react-icons/fa";
-import { AiOutlineSend } from "react-icons/ai";
+import { AiOutlineMessage } from "react-icons/ai";
 
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
     <section className="contact">
       <span id="contact"/>
        <h2 className="contact__title" >
-           Entre em contato <FaRegEnvelope className="text-info"/>
+       <AiOutlineMessage className="text-info"/> Fale conosco 
        </h2> 
        
        <article className="contact__container">
@@ -31,7 +31,7 @@ const Contact = () => {
                     <div className="content__data-inputs">
                       <label for="course">Selecione o curso</label>
                       <select name='course'>
-                          <option selected>Selecione o curso</option>
+                          <option selected>Selecionar</option>
                           <option value="AQ">Arquitetura</option>
                           <option value="DT">Direito</option>
                           <option value="EG">Engenharia Civil</option>
@@ -54,7 +54,7 @@ const Contact = () => {
                 <div className="content__button">
                     <Button type="submit" name="subscribe"
                      >
-                       Enviar 
+                       Enviar <FaRegEnvelope/>
                      </Button>
                 </div>
 

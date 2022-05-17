@@ -8,7 +8,7 @@ function Faq() {
 
   return (
     <section className="faqs">
-
+        
         <h2 className="faqs__title">Dúvidas Frequentes</h2>
        
         <article className="faqs__container">
@@ -16,7 +16,7 @@ function Faq() {
                 <Accordion flush>
 
                      <Accordion.Item eventKey="0"  className="faqs__container-item" >
-                        <Accordion.Header style={{ backgroundColor: 'pink' }}>Precisa Prestar Vestibular para fazer Medicina na Argentina?</Accordion.Header>
+                        <Accordion.Header>Precisa Prestar Vestibular para fazer Medicina na Argentina?</Accordion.Header>
                             <Accordion.Body>
                                          A Argentina adota o sistema de ensino europeu, no qual não existe vestibular. Como o acesso ao ensino superior público é ilimitado, ou seja, tem vagas para todos, não há concorrência entre os candidatos.
                             </Accordion.Body>

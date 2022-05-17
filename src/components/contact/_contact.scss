@@ -7,12 +7,14 @@
     justify-content: space-between;
     background-color: $color4;
 
+
             &__title{
-            
-            @include title(40px, center, $color-text, $color4);
+
+            @include title(40px, center, $color-text, $color6);
             padding: 150px 0px 0px 0px;
             margin-right: 10px;
             align-self: center;
+
 
             //tablet
             @include for-tablet-only{
@@ -80,7 +82,7 @@
 
 
                                     label{
-                                        @include subtitle(18px, start, $color-text);
+                                        @include subtitle(16px, start, $color6);
                                         margin-left: 5px;
                                         margin-bottom: 5px;
 
@@ -98,6 +100,7 @@
                                         padding-left: 5px;
                                         border-radius: 5px;
                                         border: solid 2px $color8;
+                                        background: $color10;
                                     }
                                 }
 
@@ -105,12 +108,12 @@
 
                         &__message{
                             @include displayflex(justify-content, center);
-                            flex-direction: column; 
+                            flex-direction: column;
 
-                            
-                            
+
+
                             label{
-                                @include subtitle(18px, start, $color-text);
+                                @include subtitle(16px, start, $color6);
                                 margin-bottom: 5px;
                                 margin-left: 5px;
 
@@ -125,11 +128,12 @@
                                 padding-left: 5px;
                                 border-radius: 5px;
                                 border: solid 2px $color8;
+                                background: $color10;
                             }
 
                             input{
                                 height: 40px;
-                                
+
                             }
 
                             textarea{
@@ -148,7 +152,7 @@
                         }
 
                     }
-                
+
 
             }
 
