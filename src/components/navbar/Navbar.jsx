@@ -32,7 +32,7 @@ const NavbarSection = () => {
                         <li className='nav-item'><a href='/#about' className='nav-link '>Sobre</a></li>
                         <li className='nav-item'><a href='/#plans' className='nav-link '>Planos</a></li>
                         <li className='nav-item'><a href='/#contact' className='nav-link '>Contato</a></li>
-                        <li className='nav-item'><a href="https://api.whatsapp.com/message/TWL6D4PXQ46BB1" target="_blank" rel="noopener noreferrer" ><button className="btn btn-info text-light">Fale Conosco <FaWhatsapp/></button></a></li>
+                        <li className='nav-item'><a href="https://api.whatsapp.com/message/TWL6D4PXQ46BB1" ><button className="btn btn-info text-light">Fale Conosco <FaWhatsapp/></button></a></li>
                     </ul>
                 </div>
 
