@@ -1,5 +1,5 @@
 import "./_home.scss";
-import { About, AnimationLoading, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components';
+import { About, Carousel, Contact, Faq, Footer, Header, KnowMore, Plans, Waves } from '../../components';
 import { useEffect, useState } from 'react';
 import { AiFillUpCircle } from "react-icons/ai";
 
@@ -53,7 +53,7 @@ const Home = () => {
               <Contact/>
               <Footer/>
               <a
-                href="#"
+                href="/#"
                 style={{opacity: visible ? '0.4' : '0'}}
                   className="top">
                     <AiFillUpCircle/>

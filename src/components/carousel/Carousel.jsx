@@ -24,8 +24,8 @@ const Carousel = () => {
 
       {carouselLoop()}
       
-      <img src={Banner} alt="Study Medicine in Argentina" className={loop?SHOW:HIDE}/>
-      <img src={Banner2} alt="Study Medicine without entrance exams" className={loop?HIDE:SHOW}/>
+      <img src={Banner} alt="Medicine in Argentina" className={loop?SHOW:HIDE}/>
+      <img src={Banner2} alt="Study without entrance exams" className={loop?HIDE:SHOW}/>
       
 
     </section>

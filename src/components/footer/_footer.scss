@@ -60,6 +60,12 @@
                 @include reset-link($color4);
                 margin-top: 5px;
 
+                transition: all 0.4s linear;
+
+                &:hover{
+                    color: $color2;
+                }
+
                 //tablet
                 @include for-tablet-only{
                     @include fontSize(13px);
@@ -111,6 +117,12 @@
                 color: $color4;
                 @include reset-link($color4);
 
+                transition: all 0.4s linear;
+
+                &:hover{
+                    color: $color2;
+                }
+
                 //tablet
                 @include for-tablet-only{
                     @include fontSize(13px);
@@ -140,6 +152,12 @@
 
             &__item{
                 color: $color4;
+
+                transition: all 0.4s linear;
+
+                &:hover{
+                    color: $color2;
+                }
                 
             //tablet
             @include for-tablet-only{

@@ -79,8 +79,9 @@ const Contact = () => {
                       <select name='course'  required
                       onChange={(e)=>{setForm({...form, course: e.target.value})}}
                       value={form.value}
+                      defaultValue={"DEFAULT"}
                       >
-                        <option selected>Selecione</option>
+                        <option value="DEFAULT">Selecione</option>
                           <option value="Arquitetura">Arquitetura</option>
                           <option value="Direito">Direito</option>
                           <option value="Engenharia Civil">Engenharia Civil</option>

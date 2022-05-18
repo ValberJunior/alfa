@@ -11,9 +11,9 @@ const Footer = () => {
                   
                   <article  className="footer__content university" >
                     <h4 className="university__title">Faculdades <FaUniversity/></h4>
-                    <a className="university__link" href='https://uai.edu.ar/' rel="noreferrer" target="_blank">UAI</a>
-                    <a className="university__link" href='https://iunir.edu.ar/'  rel="noreferrer" target="_blank">IUNIR</a>
-                    <a className="university__link" href='https://unr.edu.ar/'  rel="noreferrer"  target="_blank">UNR</a>
+                    <a className="university__link" href='https://uai.edu.ar/' target="_blank" rel="noopener noreferrer">UAI</a>
+                    <a className="university__link" href='https://iunir.edu.ar/'  target="_blank" rel="noopener noreferrer">IUNIR</a>
+                    <a className="university__link" href='https://unr.edu.ar/'   target="_blank" rel="noopener noreferrer">UNR</a>
                   </article>
 
                   <article className="footer__content map">
@@ -33,10 +33,10 @@ const Footer = () => {
 
         
         <section className="footer__socialMedia" data-aos="fade-up">
-          <a className="footer__socialMedia-link" href='https://www.facebook.com/Alfaassessoriaestudantil'   rel="noreferrer" target="_blank"><FaFacebook/></a>
-          <a className="footer__socialMedia-link" href='https://www.instagram.com/alfaestudantil/'  rel="noreferrer"  target="_blank"><FaInstagram/></a>
-          <a className="footer__socialMedia-link" href='mailto:alfaassessoriaestudantil@gmail.com'  rel="noreferrer" target="_blank"><FaRegEnvelope/></a>
-          <a className="footer__socialMedia-link" href='https://api.whatsapp.com/message/TWL6D4PXQ46BB1'  rel="noreferrer" target="_blank"><FaWhatsapp/></a>
+          <a className="footer__socialMedia-link" href='https://www.facebook.com/Alfaassessoriaestudantil'   rel="noopener noreferrer" target="_blank"><FaFacebook/></a>
+          <a className="footer__socialMedia-link" href='https://www.instagram.com/alfaestudantil/'  rel="noopener noreferrer"  target="_blank"><FaInstagram/></a>
+          <a className="footer__socialMedia-link" href='mailto:alfaassessoriaestudantil@gmail.com'  rel="noopener noreferrer" target="_blank"><FaRegEnvelope/></a>
+          <a className="footer__socialMedia-link" href='https://api.whatsapp.com/message/TWL6D4PXQ46BB1'  rel="noopener noreferrer" target="_blank"><FaWhatsapp/></a>
       </section>
 
       <section className="footer__copyright">
