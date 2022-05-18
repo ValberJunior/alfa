@@ -1,7 +1,7 @@
 @import "../../abstract/variables","../../abstract/functions","../../abstract/responsive";
 
 .button{
-    background: linear-gradient($color2, $color2, $color1);
+    background-color: $color2;
     color: $color4;
     padding: 15px 60px;
     border: none;
