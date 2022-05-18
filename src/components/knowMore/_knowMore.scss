@@ -28,7 +28,7 @@
 
                 //for phone
                 @include for-phone-only{
-                    width: 280px;
+                    width: 260px;
                     margin-bottom: 20px;
                 }
         
@@ -73,6 +73,11 @@
                     @include for-tablet-only{
                         @include text(16px, start, $color-text);
                         margin-bottom: 25px;
+                    }
+
+                    //for phone
+                    @include for-tablet-only{
+                        @include text(16px, center, $color-text);
                     }
                 }
 

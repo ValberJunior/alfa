@@ -56,12 +56,12 @@
 
                                    //tablet
                                     @include for-tablet-only{
-                                        @include wrapperCenter(500px, row)
+                                        @include wrapperCenter(100%, row)
                                     }
 
                                     //phone
                                     @include for-phone-only{
-                                        @include wrapperCenter(340px, column)
+                                        @include wrapperCenter(100%, column)
                                     }
 
                                 &-inputs{
@@ -109,8 +109,7 @@
                         &__message{
                             @include displayflex(justify-content, center);
                             flex-direction: column;
-
-
+                            
 
                             label{
                                 @include subtitle(16px, start, $color6);

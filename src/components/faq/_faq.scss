@@ -27,6 +27,12 @@
                 @include for-tablet-only{
                     margin-bottom: 30px;
                 }
+
+                 //phone
+                  @include for-phone-only{
+                    @include fontSize(32px);
+                    margin-bottom: 30px;
+                }
         }
 
         &__container{

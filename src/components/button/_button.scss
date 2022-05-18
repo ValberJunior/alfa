@@ -47,5 +47,10 @@
        }
  
        //end animation
+
+       //phone
+       @include for-phone-only{
+        padding: 15px 35px;
+       }
  
 }

@@ -11,6 +11,7 @@
     //phone
     @include for-phone-only{
       @include fullscreen(100vw, auto);
+      background-attachment:inherit;
       padding: 60px 0px;
     }
 
@@ -65,6 +66,11 @@
                 &__title{
                     @include title(40px, center, $color-text, $color8);
                     margin-bottom: 40px;
+
+                    //phone{
+                        @include for-phone-only{
+                            @include fontSize(32px);
+                        }
                 }
 
                 &__text{
