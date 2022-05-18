@@ -181,6 +181,11 @@
         @include wrapperCenter(40%, center);
         padding: 70px 0px;
 
+            //phone
+            @include for-phone-only{
+                padding: 40px 0px;
+             }
+
         &-link{
             @include reset-link($color4);
             @include fontSize(50px); 
