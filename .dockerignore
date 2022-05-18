@@ -1,0 +1,6 @@
+Dockerfile
+.dockerignore
+.gitigonore
+
+node_modules
+.env

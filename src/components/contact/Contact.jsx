@@ -23,22 +23,22 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-  emailjs.sendForm(
-                      process.env.REACT_APP_SERVICE_ID, 
-                      process.env.REACT_APP_TEMPLATE_ID, 
-                      formRef.current, 
-                      process.env.REACT_APP_PUBLIC_KEY
-                  )
-    .then((result) => {
-        console.log(result.text);
-        setDone(true);
-        setForm({name:"", email:"", course:"Selecione", subject:"", message:""});
-        setTimeout(()=>{
-          setDone(false)
-        },5000);
-    }, (error) => {
-        console.log(error.text);
-    });
+    emailjs.sendForm(
+                        process.env.REACT_APP_SERVICE_ID, 
+                        process.env.REACT_APP_TEMPLATE_ID, 
+                        formRef.current, 
+                        process.env.REACT_APP_PUBLIC_KEY
+                    )
+      .then((result) => {
+          console.log(result.text);
+          setDone(true);
+          setForm({name:"", email:"", course:"Selecione", subject:"", message:""});
+          setTimeout(()=>{
+            setDone(false)
+          },5000);
+      }, (error) => {
+          console.log(error.text);
+      });
 };
 
   return (
