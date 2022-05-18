@@ -36,7 +36,7 @@ const Footer = () => {
           <a className="footer__socialMedia-link" href='https://www.facebook.com/Alfaassessoriaestudantil'   rel="noopener noreferrer" target="_blank"><FaFacebook/></a>
           <a className="footer__socialMedia-link" href='https://www.instagram.com/alfaestudantil/'  rel="noopener noreferrer"  target="_blank"><FaInstagram/></a>
           <a className="footer__socialMedia-link" href='mailto:alfaassessoriaestudantil@gmail.com'  rel="noopener noreferrer" target="_blank"><FaRegEnvelope/></a>
-          <a className="footer__socialMedia-link" href='https://api.whatsapp.com/message/TWL6D4PXQ46BB1'  rel="noopener noreferrer" target="_blank"><FaWhatsapp/></a>
+          <a className="footer__socialMedia-link" href='https://wa.me/21993967172'  rel="noopener noreferrer" target="_blank"><FaWhatsapp/></a>
       </section>
 
       <section className="footer__copyright">

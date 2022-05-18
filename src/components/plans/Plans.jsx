@@ -35,7 +35,7 @@ const Plans = () => {
                             })}
                         </ul>
                         <span className="content__price">{SIMPLE.price}</span>
-                        <a href={SIMPLE.link} >
+                        <a href={SIMPLE.link} rel="noopener noreferrer" target="_blank" >
                             <Button>
                                 Contratar  
                             </Button>
@@ -56,7 +56,7 @@ const Plans = () => {
                             })}
                         </ul>
                         <span className="content__price">{PREMIUM.price}</span>
-                        <a href={PREMIUM.link}  >
+                        <a href={PREMIUM.link}  rel="noopener noreferrer" target="_blank" >
                             <Button>
                                 Contratar
                             </Button>

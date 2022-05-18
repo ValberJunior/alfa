@@ -2,7 +2,7 @@ export const TEXTS = [
 {
     title: "Estude Nas Melhores Faculdades Da Argentina!",
     desc: "Realize seu sonho de cursar Medicina, Engenharia, Arquitetura, Odontologia, Medicina Veterinária, entre outros cursos, sem precisar prestar vestibular, em faculdades públicas de excelente qualidade!",
-    link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
+    link: "https://wa.me/21993967172" 
 },
 {
     title: "Quem Somos Nós?",
@@ -22,7 +22,7 @@ export const PLANS = [
         {opt:"Pagamentos de taxas dos orgãos do Governo Argentino", key:5},
     ],
     price:"R$ 2800,00",
-    link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
+    link: "https://wa.me/21993967172" 
 },
 {
     title: "PACOTE PREMIUM",
@@ -34,7 +34,7 @@ export const PLANS = [
         {opt:" Além dos citados no pacote simples", key: 10},
     ],
     price:"R$ 3500,00",
-    link: "https://api.whatsapp.com/message/TWL6D4PXQ46BB1" 
+    link: "https://wa.me/21993967172" 
 }
 ]
 

@@ -17,7 +17,7 @@ const Text = TEXTS[0]
                 <h2 className="content__desc-title">{Text.title}</h2>
                 <p className="content__desc-text">{Text.desc}</p>
      
-                    <a href={Text.link} className="content__desc-link">
+                    <a href={Text.link} rel="noopener noreferrer" target="_blank" className="content__desc-link">
                         <Button>
                             Fale Conosco  <FaWhatsapp/>
                         </Button>
