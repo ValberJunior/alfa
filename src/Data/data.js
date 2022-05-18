@@ -22,7 +22,7 @@ export const PLANS = [
         {opt:"Pagamentos de taxas dos orgãos do Governo Argentino", key:5},
     ],
     price:"R$ 2800,00",
-    link: "https://wa.me/21993967172" 
+    link: "https://wa.me/5521993967172" 
 },
 {
     title: "PACOTE PREMIUM",
@@ -34,7 +34,7 @@ export const PLANS = [
         {opt:" Além dos citados no pacote simples", key: 10},
     ],
     price:"R$ 3500,00",
-    link: "https://wa.me/21993967172" 
+    link: "https://wa.me/5521993967172" 
 }
 ]
 
